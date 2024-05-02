@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>estetica</title>
+            <style class="css/text">
+                a
+                {
+                    color:white;
+                    text-decoration: none;
+                }
+                a:active
+
+                {
+                color:rgb(10, 74, 177);
+                background-color:rgb(252, 250, 250);
+                }
+                .image
+                {
+                text-align: center;
+                padding: 0%;
+                
+                }
+                .menu
+                {    
+                    background-color: black;
+                    display: flex; 
+                    list-style: none; 
+                    justify-content: space-evenly;
+                    width: 100%;
+                    color:white
+                }
+            </style>
+    </head>
+    <body>
+        <section class="image">
+            <img width="200px" height="100px" src="https://static.poder360.com.br/2023/07/natura-logo-848x477.png">
+        </section>
+        <section class="menu" id="menu">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#topo">VOLTAR AO TOPO</a></li>
+                    <li><a href="#oque  é html">O OQUE É HTML</a>
+                    <li><a href='#tabela'>TABELA</a></li>
+                    <li><a href='#lista'>PROTOCOLOS</a></li>
+                    <li><a href='#direitos'>DIREITOS</a></li>
+                    <li><a href='#formulário'>FORMULÁRIO</a></li>
+                </ul>
+            </nav>
+        </section>
+        <img width="100%" height="290" src="https://production.na01.natura.com/on/demandware.static/-/Sites-NatBrazil-Library/default/dw91137563/Blogs/2024/02/Mais%20Natura/natura-e-uma-das-empresas-mais-sustentaveis-do-mundo/natura-empresa-sustentavel-mundo-corporate-knights-desktop.jpg">
+    </body>
+</html>
