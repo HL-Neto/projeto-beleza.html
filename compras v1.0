@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style class=" text/css">
+           .menufixed{
+            z-index: -1;
+           } 
+           .aolado{
+            display: flex;
+           }
+           .valores{
+            font-weight: 900	
+           }
+           .div-efeito {
+                width: 50px;
+                height: 50px;
+                background: rgb(201, 123, 20);
+                transition: width 1s, height 2s;
+                }
+                
+                div:hover {
+                width: 100px;
+                height: 70px;
+                }
+        </style>
+    </head>
+    <body>
+        <section class="aolado">
+            <div><img width="400" aling="left" img{border-radius: 8px;} src="https://hinodegroup.vtexassets.com/arquivos/ids/157408-800-auto?v=637001865143230000&width=800&height=auto&aspect=true">
+            </div>
+            <div>    
+                <h1>Empire Sport Deo Colônia 100ml</h1>
+                </BR>
+                <h2 positio class="valores">R$ 87,45<h2>
+            </div>   
+                
+                <div class="div-efeito">textosadasdsadsadasdsadsadsadsadsad</div>
+         </section>      
+    </body>
+</html>
