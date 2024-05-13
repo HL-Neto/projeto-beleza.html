@@ -35,9 +35,9 @@
                 {
                     z-index: 1000;
                 }
-                .coring
+                .conteudo
                 {
-                    background-color: black;
+                    padding-top: 100px;
                 }
             </style>
     </head>
@@ -53,11 +53,10 @@
                 </ul>
             </nav>
         </section>
-        <section class="fixed">
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
+        <section class="conteudo">
+           
+           <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+           <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
         </section>
     </body>
 </html>
