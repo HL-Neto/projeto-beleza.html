@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>estetica</title>
+            <style class="css/text">
+                a
+                {
+                    color:white;
+                    text-decoration: none;
+                }
+                a:active
+
+                {
+                color:rgb(10, 74, 177);
+                background-color:rgb(252, 250, 250);
+                }
+             
+                .menu_fixed
+                {    
+                justify-content: space-evenly;
+                list-style: none;
+                display: flex;
+                position:fixed;
+                background-color: #121211;
+                padding: 50px;
+                width: 100%;
+                margin: 0;
+                top:0;
+                left:0;
+         
+                
+                     
+                }
+                .fixed
+                {
+                    z-index: 1000;
+                }
+                .coring
+                {
+                    background-color: black;
+                }
+            </style>
+    </head>
+    <body>
+        <section id="menu">
+            <nav>
+                <ul class="menu_fixed" >
+                    <li><a href="#topo">masculinos</a></li>
+                    <li><a href="#oque  é html">femininos</a>
+                    <li><a href='#tabela'>cremes</a></li>
+                    <li><a href='#lista'>sabonetes</a></li>
+                    <li><a href='#direitos'>disodorantes</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="fixed">
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+        </section>
+    </body>
+</html>
