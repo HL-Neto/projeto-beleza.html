@@ -2,6 +2,10 @@
     <head>
         <title>estetica</title>
             <style class="css/text">
+                body
+                {
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
                 a
                 {
                     color:white;
@@ -10,7 +14,7 @@
                 a:active
 
                 {
-                color:rgb(10, 74, 177);
+                color:pink;
                 background-color:rgb(252, 250, 250);
                 }
              
@@ -45,18 +49,17 @@
         <section id="menu">
             <nav>
                 <ul class="menu_fixed" >
-                    <li><a href="#topo">masculinos</a></li>
+                    <li><a href="#topo" >masculinos</a></li>
                     <li><a href="#oque  é html">femininos</a>
                     <li><a href='#tabela'>cremes</a></li>
                     <li><a href='#lista'>sabonetes</a></li>
-                    <li><a href='#direitos'>disodorantes</a></li>
+                    <li><a href='#direitos'>desodorantes</a></li>
                 </ul>
             </nav>
         </section>
         <section class="conteudo">
-           
-           <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-           <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+           <p>.</p>
+          
         </section>
     </body>
 </html>
