@@ -3,15 +3,16 @@
         <title>estetica</title>
             <style class="css/text">
                 body
-                {
-                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                {   
+                    background-color: #F5F5DC;
+                    font-family:'roboto', sans-serif;
                 }
                 a
                 {
                     color:white;
                     text-decoration: none;
                 }
-                a:active
+                a:active  
 
                 {
                 color:pink;
@@ -20,46 +21,67 @@
              
                 .menu_fixed
                 {    
+                font-family: 'roboto', sans-serif;
+                font-size: small;
                 justify-content: space-evenly;
                 list-style: none;
                 display: flex;
                 position:fixed;
-                background-color: #121211;
-                padding: 50px;
-                width: 100%;
+                background-color:#f6f162;
+                padding: 1%;
+                width: 98%;
                 margin: 0;
                 top:0;
                 left:0;
                 }
                 .menu_fixed li a:hover
                 {
-                    color:pink
+                    color: rgb(37, 20, 10)
                 }
+              
                 .fixed
                 {
                     z-index: 1000;
                 }
                 .conteudo
                 {
-                    padding-top: 100px;
+                    padding-top: 2%;
+                }
+                .imagem
+                {
+                    padding-left: 20%;
                 }
             </style>
     </head>
     <body>
-        <section id="menu">
+        <div id="menu">
             <nav>
                 <ul class="menu_fixed" >
-                    <li><a href="#topo" >masculinos</a></li>
-                    <li><a href="#oque  é html">femininos</a>
-                    <li><a href='#tabela'>cremes</a></li>
-                    <li><a href='#lista'>sabonetes</a></li>
-                    <li><a href='#direitos'>desodorantes</a></li>
+                    <li><a href="#topo" >INICIO</a></li>
+                    <li><a href="#ofertas">OFERTAS</a>
+                    <li><a href='#'>CREMES</a></li>
+                    <li><a href='#lista'>SABONETES</a></li>
+                    <li><a href='#direitos'>DESODORANTES</a></li>
                 </ul>
             </nav>
-        </section>
-        <section class="conteudo">
-           <p>.</p>
+        </div>
+        <div class="conteudo">
+            <section class="imagem">
+                <img id='imagens' width="50%" height="40%"   src ='https://img.freepik.com/fotos-gratis/frasco-de-produto-de-beleza-perfumado-com-aroma-luxuoso-para-relaxamento-gerado-por-inteligencia-artificial_188544-90038.jpg'>
+            </section>
+            <button onclick = 'changeImage()'>imagens</button>
+            <script>
+                const imagens = ['https://img.freepik.com/fotos-gratis/frasco-de-produto-de-beleza-perfumado-com-aroma-luxuoso-para-relaxamento-gerado-por-inteligencia-artificial_188544-90038.jpg','https://images.pexels.com/photos/1653085/pexels-photo-1653085.jpeg?auto=compress&cs=tinysrgb&w=600']
+                let  currentImageIndex = 0;
+
+                function changeImage() {
+                    currentImageIndex = (currentImageIndex + 1) % imagens.length;
+                    document.getElementById("imagens").src = imagens[currentImageIndex]
+                }
+            </script>
+
           
-        </section>
+          
+        </div>
     </body>
 </html>
