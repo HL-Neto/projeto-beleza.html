@@ -141,6 +141,7 @@
                 .ladinho {
                 display:flex;
                 background-color: brown;
+                
 
                 }
                 .ladinhotexto {
@@ -148,6 +149,8 @@
                 justify-content: space-around ;
                 background-color: #d1893c;
                 border-color:  #d1893c;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
 
                 }
 
@@ -158,6 +161,8 @@
                 padding-top: 2%;
                 padding-bottom: 2%;
                 font-size: large;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px ;
 
                  }
                  .dropbtn {
@@ -304,7 +309,7 @@
                     
                     
                   </div>
-                <div #text class="ladinhotexto">
+                <div #text class="ladinhotexto" style="border-top-left-radius:0%; border-top-right-radius: 0% ;">
                     <p>Oboticario</p>
                     <p>Ferrari</p>
                     <p>Xamuel</p>
@@ -314,18 +319,18 @@
 
                 </div>
                 <div class="menu">
-                    Cadastro:
+                   <label style="margin-left: 3%;">Cadastro:</label>
             <br>        
-                    <label>Nome:</label>
+                    <label style="margin-left: 0.2%;">Nome:</label>
                     <input type="text" name="Nome">
             <br>
                     <lavel>E-mail:</lavel>
                      <input type="email" name = "Email" required>
             <br>
-                    <label>Concordo com os termos de privacidade do site</label>
+                    <label style="margin-left: 2%;">Concordo com os termos de privacidade do site</label>
                     <input type="checkbox" name="Termo" value="aceito" required>
             <br>
-                    <input type="submit" balue="Enviar">
+                    <input style="margin-left: 2%;" type="submit" balue="Enviar">
                 </div>
 
 
