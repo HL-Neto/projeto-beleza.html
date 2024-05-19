@@ -27,7 +27,7 @@
                 list-style: none;
                 display: flex;
                 position:fixed;
-                background-color:#fce02e;
+                background-color:#30302d;
                 padding: 1%;
                 width: 98%;
                 margin: 0;
@@ -36,7 +36,7 @@
                 }
                 .menu_fixed li a:hover
                 {
-                    color: rgb(37, 20, 10)
+                    color: pink;
                 }
               
                 .fixed
@@ -45,15 +45,28 @@
                 }
                 .conteudo
                 {
-                    padding-top: 3%;
+                    padding-top: 2%;
                 }
                 .imagem
                 {
-                    padding-left: 20%;
+                    padding-left: 30%;
                 }
-             
-            </style>
+                .produtos
+                {
+                    text-align: center;
+                    display: inline-block
+
+                }
+                .produtos img
+                {
+                    width: 20%;
+                }
+               
+         </style>
     </head>
+    
+    
+    
     <body>
         <div id="menu">
             <nav>
@@ -66,21 +79,54 @@
                 </ul>
             </nav>
         </div>
+        
+        
         <div class="conteudo">
             <section class="imagem">
-                <button onclick = 'changeImage()'>&#10094;<button>
-                <img id='imagens' width="50%" height="40%"   src ='https://img.freepik.com/fotos-gratis/frasco-de-produto-de-beleza-perfumado-com-aroma-luxuoso-para-relaxamento-gerado-por-inteligencia-artificial_188544-90038.jpg'>
-                <button onclick = 'changeImage()'>&#10095;</button>
+                    <img id='imagens' width="50%" height="40%"   src ='https://img.freepik.com/fotos-gratis/frasco-de-produto-de-beleza-perfumado-com-aroma-luxuoso-para-relaxamento-gerado-por-inteligencia-artificial_188544-90038.jpg'> 
             </section>
             <script>
+               
                 const imagens = ['https://img.freepik.com/fotos-gratis/frasco-de-produto-de-beleza-perfumado-com-aroma-luxuoso-para-relaxamento-gerado-por-inteligencia-artificial_188544-90038.jpg','https://images.pexels.com/photos/1653085/pexels-photo-1653085.jpeg?auto=compress&cs=tinysrgb&w=600']
-                let  currentImageIndex = 0;
+                let currentImageIndex = 0;
 
-                function changeImage() {
-                    currentImageIndex = (currentImageIndex + 1) % imagens.length;
-                    document.getElementById("imagens").src = imagens[currentImageIndex]
+                function changeImage(direcao) {
+                    const direcaoMap = {
+                        'anterior': -1,
+                        'proximo': 1,
+                    };
+                    currentImageIndex = (currentImageIndex + direcaoMap[direcao] + imagens.length) % imagens.length;
+                    document.getElementById("imagens").src = imagens[currentImageIndex];
+                }   
+
+                function autoChangeImage() {
+                    setInterval(() => {
+                        changeImage('proximo');
+                    }, 3000);
                 }
+
+                autoChangeImage();
+
             </script>
-         </div>
+        
+        
+        <section>
+        <h3>- produtos em destaque !</h3>
+        <section class="produtos">
+            <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+            <br>
+            <button onclick='abrirNovaJanela()'> 90 reais</button>
+                <script>
+                    function abrirNovaJanela() {
+
+                     var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+            
+                    window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                </script>
+
+        </section>
+          
+          
+        </section>
     </body>
 </html>
