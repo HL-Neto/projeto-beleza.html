@@ -51,6 +51,12 @@
                 {
                     padding-left: 30%;
                 }
+                .produtoemlinha
+                {
+                    display: flex;
+                    padding-top: 2%;
+                    padding-bottom: 2% ;
+                }
                 .produtos
                 {
                     text-align: center;
@@ -60,6 +66,10 @@
                 .produtos img
                 {
                     width: 20%;
+                }
+                .titulo
+                {
+                    padding-top: 3%;
                 }
                
          </style>
@@ -110,8 +120,10 @@
             </script>
         
         
-        <section>
+        <section class="titulo">
         <h3>- produtos em destaque !</h3>
+        </section>
+        <div class="produtoemlinha">
         <section class="produtos">
             <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
             <br>
@@ -125,8 +137,76 @@
                 </script>
 
         </section>
-          
+        <section class="produtos">
+            <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+            <br>
+            <button onclick='abrirNovaJanela()'> 90 reais</button>
+                <script>
+                    function abrirNovaJanela() {
+
+                     var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+            
+                    window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                </script>
+
+        </section>
+        <section class="produtos">
+            <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+            <br>
+            <button onclick='abrirNovaJanela()'> 90 reais</button>
+                <script>
+                    function abrirNovaJanela() {
+
+                     var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+            
+                    window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                </script>
+
+        </section>
+        </div>
+        <div class="produtoemlinha">
+            <section class="produtos">
+                <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                <br>
+                <button onclick='abrirNovaJanela()'> 90 reais</button>
+                    <script>
+                        function abrirNovaJanela() {
+    
+                         var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                
+                        window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                    </script>
+    
+            </section>
+            <section class="produtos">
+                <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                <br>
+                <button onclick='abrirNovaJanela()'> 90 reais</button>
+                    <script>
+                        function abrirNovaJanela() {
+    
+                         var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                
+                        window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                    </script>
+    
+            </section>
+            <section class="produtos">
+                <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                <br>
+                <button onclick='abrirNovaJanela()'> 90 reais</button>
+                    <script>
+                        function abrirNovaJanela() {
+    
+                         var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                
+                        window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                    </script>
+    
+            </section>
+            </div>
           
         </section>
     </body>
 </html>
+          
