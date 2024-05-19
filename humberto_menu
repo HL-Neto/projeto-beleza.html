@@ -27,7 +27,7 @@
                 list-style: none;
                 display: flex;
                 position:fixed;
-                background-color:#f6f162;
+                background-color:#fce02e;
                 padding: 1%;
                 width: 98%;
                 margin: 0;
@@ -45,12 +45,13 @@
                 }
                 .conteudo
                 {
-                    padding-top: 2%;
+                    padding-top: 3%;
                 }
                 .imagem
                 {
                     padding-left: 20%;
                 }
+             
             </style>
     </head>
     <body>
@@ -67,9 +68,10 @@
         </div>
         <div class="conteudo">
             <section class="imagem">
+                <button onclick = 'changeImage()'>&#10094;<button>
                 <img id='imagens' width="50%" height="40%"   src ='https://img.freepik.com/fotos-gratis/frasco-de-produto-de-beleza-perfumado-com-aroma-luxuoso-para-relaxamento-gerado-por-inteligencia-artificial_188544-90038.jpg'>
+                <button onclick = 'changeImage()'>&#10095;</button>
             </section>
-            <button onclick = 'changeImage()'>imagens</button>
             <script>
                 const imagens = ['https://img.freepik.com/fotos-gratis/frasco-de-produto-de-beleza-perfumado-com-aroma-luxuoso-para-relaxamento-gerado-por-inteligencia-artificial_188544-90038.jpg','https://images.pexels.com/photos/1653085/pexels-photo-1653085.jpeg?auto=compress&cs=tinysrgb&w=600']
                 let  currentImageIndex = 0;
@@ -79,9 +81,6 @@
                     document.getElementById("imagens").src = imagens[currentImageIndex]
                 }
             </script>
-
-          
-          
-        </div>
+         </div>
     </body>
 </html>
