@@ -48,6 +48,8 @@ Feminino
     Corpo: Flor de Pêssego. 
     Fundo: Notas Amadeiradas, Âmbar e Almíscar Branco.
 
+    Familia Olfativa: Amadeirado, Floral, Frutal
+
     Alcohol Denat, Aqua/Water/Eau, Parfum/Fragrance, Linalool, Limonene, Butylphenyl Methylpropional, Citronellol, Coumarin, Geraniol, Bht, Citral, Tetrasodium 
     Eau de Toilettea, Isoeugenol, Acrylates/Octylacrylahearte Copolymer, Hydrolyzed Jojoba Esters.
     
@@ -55,6 +57,8 @@ Feminino
     Cabeça: Laranja Amarga, Framboesa, Neroli 
     Corpo: Azahar, Flor de Laranjeira, Jasmim Sambac, Gardênia 
     Fundo: Patchouli, Âmbar, Mel.
+
+    Familia Olfativa: Floral Amadeirado
 
     Alcohol Denat., Parfum (Fragrance), Aqua (Water), Ethylhexyl Methoxycinnamate, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Limonene, Benzyl 
     Salicilate, Alpha-Isomethyl Ionone, Hydroxycitronellal, Butylphenyl Methylpropional, Hexyl Cinnamal, Linalool, Coumarin, Citronellol, Citral, Geraniol, Benzyl 
@@ -64,6 +68,8 @@ Feminino
     Cabeça:Black Currant, Pear
     Corpo:Iris, Jasmine, Orange Blossom
     Fundo:Praline, Vanilla, Patchouli, Tonka Bean  
+  
+    Familia Olfativa: Floral, Frutal, Gustativo
 
     Alcohol, Fragrance, Water, Linalool, Benzyl Salicylate, Limonene, Methyl Anthranilate, Tris (Tetramethylhydroxypiperidinol) Citrate, Ethylhexyl 
     Methoxycinnamate, Butyl Methoxydibenzoylmethane, Bht, CI 14700 (Red 4), CI 17200 (Red 33), Geraniol, Alpha-Isomethyl Ionone, Coumarin, Farnesol, Citral, 
@@ -72,7 +78,9 @@ Feminino
   4-Good Girl Eau de Parfum, Carolina herrera
     Cabeça: Amendoa e Café. 
     Corpo: Jasmin-árabe e Tuberosa. 
-    Fundo: Fava-tonca e Cacau.  
+    Fundo: Fava-tonca e Cacau.
+
+    Familia Olfativa: Oriental Floral
 
     Alcohol Denat., Fragrance, Water, Linalool, Hydroxycitronellal, Benzyl Salicylate, Coumarin, Ethylhexyl Methoxycinnamate, Benzyl Benzoate, Ethylhexyl 
     Saliclate, Butyl Methoxydibenzoylmethane, Limonen, Geraniol, Citronellol, Isoeugenol, Hexyl Cinnamal, Benzyl Alcohol, Citral, Ci 60730 (Ext.
@@ -81,6 +89,8 @@ Feminino
     Cabeça:Pera, Groselha Preta, Ruibarbo
     Corpo:Tuberosa, flor de laranjeira, Rosa Turca
     Fundo:Avelã, Sândalo, Nota Amadeiradas
+
+    Familia Olfativa: Floral
 
     ALCOHOL,PARFUM / FRAGRANCE, AQUA / WATER, BENZYL SALICYLATE, BENZYL ALCOHOL, LINALOOL, LIMONENE, BUTYL METHOXYDIBENZOYLMETHANE, HYDROXYCITRONELLAL, ALPHA- 
     ISOMETHYL IONONE, CITRONELLOL, METHYL ANTHRANILATE, GERANIOL, ISOEUGENOL, TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE, CITRAL, BENZYL BENZOATE, FARNESOL, CI 
