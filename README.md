@@ -4,6 +4,8 @@ Masculino
     Abertura:Pimenta e Bergamota da Calábria. 
     Corpo:notas florais de Gerânio, Lavanda, Pimenta de Szechuan, Elemi, Pimenta rosa, Vetiver e Patchouli. 
     Fundo: Cedro, Ládano e Ambroxan. 
+
+Familia olfativa:Aromático Amadeirado
     
     #12053A Alcohol, Parfum (Fragrance), Aqua (Water), Limonene, Linalool, Ethylhexyl Methoxycinnamate, Coumarin, Citronellol, Diethylamino Hydroxybenzoyl Hexyl 
     Benzoate, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Citral, Bht, Geraniol, Ci 60730 (Ext. Violet 2), Tocopherol, Ci 19140 (Yellow 5), Ci 14700 
@@ -13,7 +15,9 @@ Masculino
     Abertura: Petitgrain, Lavanda, Acordes Verdes, Toranja, Bergamota, Grama Cortada;
     Corpo: Gengibre, Pimenta Verde, Gardênia, Violeta, Sálvia;
     Fundo: Labdanum, Sândalo, Madeira De Guaiaco, Vetiver, Incenso.
-    
+
+Familia olfativa: Floral, Frutal
+  
     Alcohol Denat., Aqua (Water), Parfum (Fragrance), Linalool, Limonene, Geraniol, Citronellol, Hydroxycitronellal, Benzyl Salicylate, Hexyl Cinnamal, Coumarin, 
     Citral, Benzyl Benzoate, Ci 60730 (Ext.
     
@@ -21,6 +25,8 @@ Masculino
       Abertura:Cardamomo
       Corpo:Toffee
       Fundo:Madeira de Âmbar
+      
+Familia olfativa:Cítrico Aromático.
 
       Alcohol, Parfum/Fragrance, Aqua/Water/Eau, Benzyl Benzoate, Ethylhexyl Salicylate, Butyl Methoxydibenzoylmethane, Limonene, Coumarin, Linalool, Methyl     
       Anthranilate, Hydroxycitronellal, Benzyl Alcohol, Alpha-Isomethyl Ionone, Citronellol, Citral, Isoeugenol, Geraniol, Cinnamal, 
@@ -32,6 +38,8 @@ Masculino
      Corpo: Sálvia Esclerea
      Fundo: Vetiver e Madeira de Cedro Virginia 
 
+Familia olfativa:Amadeirado/Aromatico
+
      Alcohol, Parfum/Fragrance, Aqua/Water/Eau, Limonene, Benzyl Salicylate, Benzyl Alcohol, Linalool, Alpha-Isomethyl Ionone, Ethylhexyl Salicylate, Butyl 
      Methoxydibenzoylmethane, Coumarin, Citronellol, T-Butyl Alcohol, Citral, Geraniol, Methyl Anthranilate, Denatonium Benzoate.
      
@@ -39,6 +47,8 @@ Masculino
      Cabeça:Cardamomo
      Corpo: Lavanda, Íris
      Fundo: Baunilha, Notas Orientais, Notas Amadeiradas
+  
+Familia olfativa:Oriental, Fougére.
 
       ALCOHOL DENAT., PARFUM (FRAGRANCE), AQUA (WATER), COUMARIN, LINALOOL, ALPHA-ISOMETHYL IONONE, BUTYL METHOXYDIBENZOYLMETHANE, LIMONENE, CINNAMAL, GERANIOL.
      
@@ -46,7 +56,9 @@ Feminino
   1-212 vip Rosé Eau de Parfum, Carolina Herrera
     Cabeça: Notas Frutadas e Champagne. 
     Corpo: Flor de Pêssego. 
-    Fundo: Notas Amadeiradas, Âmbar e Almíscar Branco.
+    Fundo: Notas Amadeiradas, Âmbar e Almíscar Branco. 
+
+Familia olfativa:Floral
 
     Alcohol Denat, Aqua/Water/Eau, Parfum/Fragrance, Linalool, Limonene, Butylphenyl Methylpropional, Citronellol, Coumarin, Geraniol, Bht, Citral, Tetrasodium 
     Eau de Toilettea, Isoeugenol, Acrylates/Octylacrylahearte Copolymer, Hydrolyzed Jojoba Esters.
@@ -56,6 +68,8 @@ Feminino
     Corpo: Azahar, Flor de Laranjeira, Jasmim Sambac, Gardênia 
     Fundo: Patchouli, Âmbar, Mel.
 
+Familia olfativa:Floral Amadeirado
+
     Alcohol Denat., Parfum (Fragrance), Aqua (Water), Ethylhexyl Methoxycinnamate, Butyl Methoxydibenzoylmethane, Ethylhexyl Salicylate, Limonene, Benzyl 
     Salicilate, Alpha-Isomethyl Ionone, Hydroxycitronellal, Butylphenyl Methylpropional, Hexyl Cinnamal, Linalool, Coumarin, Citronellol, Citral, Geraniol, Benzyl 
      Alcohol, Isoeugenol, Ci 15985 (Yellow 6), Ci 19140 (Yellow 5), Ci 61570 (Green 5), Ci 14700 (Red 4).
@@ -63,7 +77,9 @@ Feminino
   3-La Viest Belle Eau de Parfum, Lancôme
     Cabeça:Black Currant, Pear
     Corpo:Iris, Jasmine, Orange Blossom
-    Fundo:Praline, Vanilla, Patchouli, Tonka Bean  
+    Fundo:Praline, Vanilla, Patchouli, Tonka Bean 
+
+Familia floral:Floral, Frutal, Gustativo
 
     Alcohol, Fragrance, Water, Linalool, Benzyl Salicylate, Limonene, Methyl Anthranilate, Tris (Tetramethylhydroxypiperidinol) Citrate, Ethylhexyl 
     Methoxycinnamate, Butyl Methoxydibenzoylmethane, Bht, CI 14700 (Red 4), CI 17200 (Red 33), Geraniol, Alpha-Isomethyl Ionone, Coumarin, Farnesol, Citral, 
@@ -74,6 +90,8 @@ Feminino
     Corpo: Jasmin-árabe e Tuberosa. 
     Fundo: Fava-tonca e Cacau.  
 
+   Familia olfativa:Oriental Floral.
+
     Alcohol Denat., Fragrance, Water, Linalool, Hydroxycitronellal, Benzyl Salicylate, Coumarin, Ethylhexyl Methoxycinnamate, Benzyl Benzoate, Ethylhexyl 
     Saliclate, Butyl Methoxydibenzoylmethane, Limonen, Geraniol, Citronellol, Isoeugenol, Hexyl Cinnamal, Benzyl Alcohol, Citral, Ci 60730 (Ext.
    
@@ -81,6 +99,8 @@ Feminino
     Cabeça:Pera, Groselha Preta, Ruibarbo
     Corpo:Tuberosa, flor de laranjeira, Rosa Turca
     Fundo:Avelã, Sândalo, Nota Amadeiradas
+
+  Familia olfativa:Floral
 
     ALCOHOL,PARFUM / FRAGRANCE, AQUA / WATER, BENZYL SALICYLATE, BENZYL ALCOHOL, LINALOOL, LIMONENE, BUTYL METHOXYDIBENZOYLMETHANE, HYDROXYCITRONELLAL, ALPHA- 
     ISOMETHYL IONONE, CITRONELLOL, METHYL ANTHRANILATE, GERANIOL, ISOEUGENOL, TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE, CITRAL, BENZYL BENZOATE, FARNESOL, CI 
