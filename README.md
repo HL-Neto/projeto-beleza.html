@@ -1,5 +1,5 @@
 212 vip rose
-https://img.lojasrenner.com.br/item/535183333/large/3.jpg
+https://www.giraofertas.com.br/wp-content/uploads/2019/06/212-VIP-Rose-Carolina-Herrera-Eau-de-Parfum-04.jpg
 
 lady million
 https://epocacosmeticos.vteximg.com.br/arquivos/ids/436047-500-500/Lady-Million-Paco-Rabanne---Perfume-Feminino---Eau-de-Parfum-3.jpg?v=637589696228970000
