@@ -1,0 +1,578 @@
+<html>
+    <head>
+        <title>estetica</title>
+            <style class="css/text">
+                body{
+                    background-color: #F5F5DC;
+                    font-family:'roboto', sans-serif;
+                }
+                .menu_fixed
+                {   
+                 
+                font-family: 'roboto', sans-serif;
+                font-size: small;
+                justify-content: space-evenly;
+                list-style: none;
+                display: flex;
+                position:fixed;     
+                background-color:#fffa66;
+                padding: 1%;
+                width: 98%;
+                margin: 0;
+                top:0;
+                left:0;
+                }
+                a
+                {
+                    color:white;
+                    text-decoration: none;
+                }
+                a:active  
+
+                {
+                color:pink;
+                background-color:rgb(252, 250, 250);
+                }
+                .menu_fixed li a:hover
+                {
+                    color: rgb(225, 74, 202);
+                }
+                .menu_fixed li a
+                {
+                    color: rgb(29, 18, 4);
+                }
+             
+                .conteudo {
+                padding-top: 3%;
+                }
+                .imagem {
+                    text-align: center;
+                   
+                    width: 100%;
+
+                    
+                }
+                .divisao{
+                    margin-top: 0.5%;
+                    padding-top: 0.01%;
+                    padding-bottom: 0.01%;
+                    border-radius: 20px;
+                    color:black;
+                    text-align: center;
+                    font-family: sans-serif;
+
+                }
+                .produtos{
+                    display: flex;
+                    width: 80%;
+
+                }
+                .button {
+                display: inline-block;
+                border-radius: 4px;
+                background-color: #161616;
+                border: none;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 20px;
+                padding: 10px;
+                width: 250px;
+                transition: all 1s;
+                cursor: pointer;
+                margin: 5px;
+                margin-left: 7%;
+                }
+                .button button:hover
+                {
+                    background-color: purple;
+                }
+
+                .button span {
+                cursor: pointer;
+                display: inline-block;
+              
+                transition: 0.5s;
+                }
+
+                .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+                }
+
+                .button:hover span {
+                padding-right: 25px;
+                }
+
+                .button:hover span:after {
+                opacity: 1;
+                right: 0;
+                }
+
+                .form-container {
+                    background-color: #fff;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    width: 50%;
+                }
+                .form-container h2 {
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                    font-size: 24px;
+                    color: #333;
+                }
+                .form-container label {
+                    float: left;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+                .form-container input,
+                .form-container textarea {
+                    width: 100%;
+                    padding: 10%;
+                    margin-bottom: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+                .form-container input[type="submit"] {
+                    background-color: #28a745;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+                .form-container input[type="submit"]:hover {
+                    background-color: #218838;
+        
+                }
+                 .ladinhotexto {
+                    display: flex;
+                    justify-content: space-around ;
+                    background-color: #d1893c;
+                    border-color:  #d1893c;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+
+                }
+                .contatos{
+                    width: 15%;
+                    height: 15%;
+                    margin-left: 15%;
+                    margin-top: 3%;
+                }
+
+
+
+            </style>
+
+
+</style>
+</html>
+<html>
+    <head>
+         <body>
+            <div id="menu">
+                <nav>
+                    <ul class="menu_fixed" >
+                        <li><a href="#menu">INICIO</a></li>
+                        <li><a href="#ofertas">OFERTAS</a>
+                        <li><a href='creme_site.html'>CREMES</a></li>
+                        <li><a href='sabontes.html'>SABONETES</a></li>
+                        <li><a href='shampoo.html'>SHAMPOO</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <head>
+        <body>
+            <div class="conteudo">
+                <section class="imagem">
+                    <img id='imagens' width="50%" height="40%"
+                        src='https://production.na01.natura.com/on/demandware.static/-/Library-Sites-AvonBrazilSharedLibrary/default/dwfabbaf97/2024/05/06-05/banner-home-desconto-progressivo-dsk.jpg'>
+                </section>
+                <script>
+        
+                    const imagens = ['https://production.na01.natura.com/on/demandware.static/-/Library-Sites-AvonBrazilSharedLibrary/default/dwfabbaf97/2024/05/06-05/banner-home-desconto-progressivo-dsk.jpg', 'https://production.na01.natura.com/on/demandware.static/-/Library-Sites-AvonBrazilSharedLibrary/default/dw112c440a/2024/05/13-05/banner-home-cupons-dsk.jpg', 'https://www.shutterstock.com/image-vector/fragrance-advertising-banner-template-glass-260nw-2147941849.jpg',]
+                    let currentImageIndex = 0;
+        
+                    function changeImage(direcao) {
+                        const direcaoMap = {
+                            'anterior': -1,
+                            'proximo': 1,
+                        };
+                        currentImageIndex = (currentImageIndex + direcaoMap[direcao] + imagens.length) % imagens.length;
+                        document.getElementById("imagens").src = imagens[currentImageIndex];
+                    }
+        
+                    function autoChangeImage() {
+                        setInterval(() => {
+                            changeImage('proximo');
+                        }, 3000);
+                    }
+        
+                    autoChangeImage();
+        
+                </script>
+            </div>
+        </body>
+    </head>
+    <br>
+    <br>
+    <br>
+    <head> <!-- produtos -->
+        <body>
+            <section class="divisao">
+                    <h1> produtos em destaques ! </h1>
+            </section>
+            <section class="produtos">
+                
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    
+                
+            </section>
+                <div style="display: flex;margin-left: 7.5%">
+                    <section>
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 11.8%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 12.5%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 13%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                </div>    
+            <section style="display: flex;">
+            <button class="button" style="vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            </section>
+
+        </body>
+    </head>
+    <br>
+    <br>
+    <br>
+    <head>
+        <body>
+            <section>
+                <float class="produtos">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    
+                </float>
+            </section>
+                <div style="display: flex;margin-left: 7.5%">
+                    <section>
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 11.8%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 12.5%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 13%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                </div>    
+            <section style="display: flex;">
+            <button class="button" style="vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            </section>
+
+        </body>
+    </head><!-- produtos Mais vendidos -->
+    <br>
+    <br>
+    <br>
+    <head>
+        <body>
+            <section class="divisao">
+                <h1 style=" margin-top: 5%; margin-bottom: 5%;"> PRODUTOS FEMININOS </h1> <!-- Divisão -->
+            </section>
+            <section>
+                <float class="produtos">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    
+                </float>
+            </section>
+                <div style="display: flex;margin-left: 7.5%">
+                    <section>
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 11.8%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 12.5%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 13%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                </div>    
+            <section style="display: flex;">
+            <button class="button" style="vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            </section>
+
+        </body>
+    </head>
+    <br>
+    <br>
+    <br>
+    <head>
+        <body>
+            <section>
+                <float class="produtos">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    
+                </float>
+            </section>
+                <div style="display: flex;margin-left: 7.5%">
+                    <section>
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 11.8%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 12.5%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 13%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                </div>    
+            <section style="display: flex;">
+            <button class="button" style="vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            </section>
+        </body>
+    </head>
+    <br>
+    <br>
+    <br>
+    <head>
+        <body>
+            <section class="divisao">
+                <h1 style=" margin-top: 5%; margin-bottom: 5%;"> PRODUTOS MASCULINOS </h1> <!-- Divisão -->
+            </section>
+            <section>
+                <float class="produtos">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    
+                </float>
+            </section>
+                <div style="display: flex;margin-left: 7.5%">
+                    <section>
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 11.8%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 12.5%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 13%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                </div>    
+            <section style="display: flex;">
+            <button class="button" style="vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            </section>
+
+        </body>
+    </head>
+    <br>
+    <br>
+    <br>
+    <head>
+        <body>
+            <section>
+                <float class="produtos">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <img style="width: 25%;margin-left: 5%"src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    
+                </float>
+            </section>
+                <div style="display: flex;margin-left: 7.5%">
+                    <section>
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 11.8%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 12.5%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                    <section style="margin-left: 13%">
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    </section>
+                </div>    
+            <section style="display: flex;">
+            <button class="button" style="vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            <button class="button" style="margin-left:10.3%;vertical-align:middle"><span>Comprar </span><!-- Botão de compra direta --></button>
+            </section>
+        </body>
+    </head>
+    <br>
+    <br>
+    <br>
+    <head>
+    </div>
+            <div #text class="ladinhotexto" style="border-top-left-radius:20px; border-top-right-radius: 20px ;">
+                <p>Oboticario</p>
+                <p>Ferrari</p>
+                <p>Xamuel</p>
+                <p>Hugo siva</p>
+                <p>Thiago silva</p>
+
+
+            </div>
+            <div style="float: left;">
+                <section class="form-container">
+                    <h2>Entre em Contato</h2>
+                    <form method="post">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Sua mensagem" required></textarea>
+                        
+                        <input type="submit" value="Enviar">
+                    </form>
+                </section>
+            </div>
+            <section style="width: 8%;height: 5%;display: flex;margin-right: 25%;">
+                <h3 style="text-align: center;">Pagamentos:</h3>
+                    <section style="margin-top: 10%;width: 75%;height: 75%;display: flex;">
+                        <img style="margin-left: 4%" src="https://cdn-icons-png.flaticon.com/128/1/1863.png">
+                        <img style="margin-left: 4%" src="https://hinodeonlineio.vtexassets.com/arquivos/image_pix.png">
+                        <img style="margin-left: 4%" src="https://hinodeonlineio.vtexassets.com/arquivos/image_amex.png">
+                        <img style="margin-left: 4%" src="https://hinodeonlineio.vtexassets.com/arquivos/image_mastercard.png">
+                        <img style="margin-left: 4%" src="https://hinodeonlineio.vtexassets.com/arquivos/image_elo.png">
+                        <img style="margin-left: 4%" src="https://hinodeonlineio.vtexassets.com/arquivos/image_hipercard.png">
+                        <img style="margin-left: 4%" src="https://hinodeonlineio.vtexassets.com/arquivos/image_diners_club.png">
+                    </section>    
+            </section>
+            <div style="margin-top: 6%;">
+                <section style="display: flex;">
+                    <img style="width: 3%;height: 6%; margin-top: 1%;" src="https://cdn-icons-png.flaticon.com/128/3735/3735233.png"><h1>4002-8922</h1>
+                </section>
+                <section style="display: flex;">
+                    <img style="width: 3%;height: 6%; margin-top: 1%;" src="https://cdn-icons-png.flaticon.com/128/5037/5037686.png"><h1>839876-9584</h1> 
+                </section>    
+            </div>
+            <section style="float: right;display: flex;">
+                <img style="width: 50%;margin-bottom:25% ; border-radius: 20px;" src="https://www.esegurocorretora.com.br/assets/assets_files/reclameaqui-1.png">
+            </section>
+
+
+    </head>
+
+</html>
