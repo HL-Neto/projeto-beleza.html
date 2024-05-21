@@ -1,11 +1,27 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>estetica</title>
             <style class="css/text">
-                body
-                {   
+                body{
                     background-color: #F5F5DC;
                     font-family:'roboto', sans-serif;
+                }
+                .menu_fixed
+                {   
+                 
+                font-family: 'roboto', sans-serif;
+                font-size: small;
+                justify-content: space-evenly;
+                list-style: none;
+                display: flex;
+                position:fixed;     
+                background-color:#fffa66;
+                padding: 1%;
+                width: 100%;
+                margin: 0;
+                top:0;
+                left:0;
                 }
                 a
                 {
@@ -18,203 +34,523 @@
                 color:pink;
                 background-color:rgb(252, 250, 250);
                 }
-             
-                .menu_fixed
-                {    
-                font-family: 'roboto', sans-serif;
-                font-size: small;
-                justify-content: space-evenly;
-                list-style: none;
-                display: flex;
-                position:fixed;
-                background-color:#30302d;
-                padding: 1%;
-                width: 98%;
-                margin: 0;
-                top:0;
-                left:0;
-                }
                 .menu_fixed li a:hover
                 {
-                    color: pink;
+                    color: rgb(225, 74, 202);
                 }
-            
-                .fixed
+                .menu_fixed li a
                 {
-                    z-index: 1000;
+                    color: rgb(29, 18, 4);
                 }
-                .conteudo
-                {
-                    padding-top: 3%;
+             
+                .conteudo {
+                padding-top: 3%;
                 }
-                .imagem
-                {   
-                  
+                .imagem {
                     text-align: center;
-                    padding-left: 9%;
-                    width: 80%;
-                   
+                    padding-bottom: 3%;
+                    width: 100%;
+
+                    
                 }
-                .produtoemlinha
-                {
-                    display: flex;
-                    padding-top: 2%;
-                    padding-bottom: 2% ;
+
+                .button {
+                display: inline-block;
+                border-radius: 4px;
+                background-color: #161616;
+                border: none;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 15px;
+                padding: 10px;
+                width: 250px;
+                transition: all 1s;
+                cursor: pointer;
+                margin: 5px;
+                margin-left: 7%;
                 }
-                .produtos
+                .button button:hover
                 {
+                    background-color: purple;
+                }
+
+                .button span {
+                cursor: pointer;
+                display: inline-block;
+              
+                transition: 0.5s;
+                }
+
+                .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                transition: 0.5s;
+                }
+
+                .button:hover span {
+                padding-right: 25px;
+                }
+
+                .button:hover span:after {
+                opacity: 1;
+                right: 0;
+                }
+                .menu{
+                justify-content: center;
+                background-color: rgb(91, 68, 36);
+                text-align: center;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                font-size: large;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px 
+                }
+                .ladinhotexto {
+                display: flex;
+                justify-content: space-around ;
+                background-color: #d1893c;
+                border-color:  #d1893c;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+
+                }
+                .produtos2
+                {   
+                    padding-bottom: 4%;
                     text-align: center;
                     display: inline-block
 
                 }
-                .produtos img
+                .produtos2 img
                 {
-                    width: 20%;
+                    padding-left: 10%;
+                    width: 30%;
+                    height: 35%;
                 }
-                .titulo
-                {
-                    padding-top: 3%;
-                }
-          
-               
-         </style>
-    </head>
-    
-    
-    
-    <body>
-        <div id="menu">
-            <nav>
-                <ul class="menu_fixed" >
-                    <li><a href="#menu">INICIO</a></li>
-                    <li><a href="#ofertas">OFERTAS</a>
-                    <li><a href='creme_site.html'>CREMES</a></li>
-                    <li><a href='sabontes.html'>SABONETES</a></li>
-                    <li><a href='shampoo.html'>SHAMPOO</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-        
-        <div class="conteudo">
-            <section class="imagem">
-                    <img id='imagens' width="50%" height="40%"   src ='https://img.freepik.com/fotos-gratis/frasco-de-produto-de-beleza-perfumado-com-aroma-luxuoso-para-relaxamento-gerado-por-inteligencia-artificial_188544-90038.jpg'> 
-            </section>
-            <script>
-               
-                const imagens = ['https://img.freepik.com/fotos-gratis/frasco-de-produto-de-beleza-perfumado-com-aroma-luxuoso-para-relaxamento-gerado-por-inteligencia-artificial_188544-90038.jpg','https://images.pexels.com/photos/1653085/pexels-photo-1653085.jpeg?auto=compress&cs=tinysrgb&w=600','https://www.shutterstock.com/image-vector/fragrance-advertising-banner-template-glass-260nw-2147941849.jpg',]
-                let currentImageIndex = 0;
+               .textoproduto
+               {
+                margin-left: 7.5%;
+                display:flex;
+                text-align: center;
+               }
+               .titulo
+               {
+                padding-top: 2%;
+                padding-bottom: 2%;
+                text-align: center;
+               }
 
-                function changeImage(direcao) {
-                    const direcaoMap = {
-                        'anterior': -1,
-                        'proximo': 1,
-                    };
-                    currentImageIndex = (currentImageIndex + direcaoMap[direcao] + imagens.length) % imagens.length;
-                    document.getElementById("imagens").src = imagens[currentImageIndex];
-                }   
+            </style>
 
-                function autoChangeImage() {
-                    setInterval(() => {
-                        changeImage('proximo');
-                    }, 3000);
-                }
 
-                autoChangeImage();
-
-            </script>
-        
-        
-        <section class="titulo">
-        <h3>- produtos em destaque !</h3>
-        </section>
-        <div class="produtoemlinha">
-        <section class="produtos">
-            <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
-            <br>
-            <button onclick='abrirNovaJanela()'> 90 reais</button>
-                <script>
-                    function abrirNovaJanela() {
-
-                     var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
-            
-                    window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
-                </script>
-
-        </section>
-        <section class="produtos">
-            <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
-            <br>
-            <button onclick='abrirNovaJanela()'> 90 reais</button>
-                <script>
-                    function abrirNovaJanela() {
-
-                     var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
-            
-                    window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
-                </script>
-
-        </section>
-        <section class="produtos">
-            <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
-            <br>
-            <button onclick='abrirNovaJanela()'> 90 reais</button>
-                <script>
-                    function abrirNovaJanela() {
-
-                     var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
-            
-                    window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
-                </script>
-
-        </section>
-        </div>
-        <div class="produtoemlinha">
-            <section class="produtos">
-                <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
-                <br>
-                <button onclick='abrirNovaJanela()'> 90 reais</button>
-                    <script>
-                        function abrirNovaJanela() {
-    
-                         var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
-                
-                        window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
-                    </script>
-    
-            </section>
-            <section class="produtos">
-                <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
-                <br>
-                <button onclick='abrirNovaJanela()'> 90 reais</button>
-                    <script>
-                        function abrirNovaJanela() {
-    
-                         var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
-                
-                        window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
-                    </script>
-    
-            </section>
-            <section class="produtos">
-                <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
-                <br>
-                <button onclick='abrirNovaJanela()'> 90 reais</button>
-                    <script>
-                        function abrirNovaJanela() {
-    
-                         var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
-                
-                        window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
-                    </script>
-    
-            </section>
-            </div>
-          
-        </section>
-    </body>
+</style>
 </html>
+<html>
+    <head>
+         <body>
+            <div id="menu">
+                <nav>
+                    <ul class="menu_fixed" >
+                        <li><a href="#menu">INICIO</a></li>
+                        <li><a href="#ofertas">OFERTAS</a>
+                        <li><a href='creme_site.html'>CREMES</a></li>
+                        <li><a href='sabontes.html'>SABONETES</a></li>
+                        <li><a href='shampoo.html'>SHAMPOO</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <head>
+        <body>
+            <div class="conteudo">
+                <section class="imagem">
+                    <img id='imagens' width="50%" height="40%"
+                        src='https://production.na01.natura.com/on/demandware.static/-/Library-Sites-AvonBrazilSharedLibrary/default/dwfabbaf97/2024/05/06-05/banner-home-desconto-progressivo-dsk.jpg'>
+                </section>
+                <script>
+        
+                    const imagens = ['https://production.na01.natura.com/on/demandware.static/-/Library-Sites-AvonBrazilSharedLibrary/default/dwfabbaf97/2024/05/06-05/banner-home-desconto-progressivo-dsk.jpg', 'https://production.na01.natura.com/on/demandware.static/-/Library-Sites-AvonBrazilSharedLibrary/default/dw112c440a/2024/05/13-05/banner-home-cupons-dsk.jpg', 'https://www.shutterstock.com/image-vector/fragrance-advertising-banner-template-glass-260nw-2147941849.jpg',]
+                    let currentImageIndex = 0;
+        
+                    function changeImage(direcao) {
+                        const direcaoMap = {
+                            'anterior': -1,
+                            'proximo': 1,
+                        };
+                        currentImageIndex = (currentImageIndex + direcaoMap[direcao] + imagens.length) % imagens.length;
+                        document.getElementById("imagens").src = imagens[currentImageIndex];
+                    }
+        
+                    function autoChangeImage() {
+                        setInterval(() => {
+                            changeImage('proximo');
+                        }, 3000);
+                    }
+        
+                    autoChangeImage();
+        
+                </script>
+            </div>
+        </body>
+    </head>
+    <br>
+    <br>
+    <br>
+    <head> <!-- produtos -->
+        <body>
+            <section class="titulo">
+                    <h1> produtos em destaques ! </h1>
+            </section>
+            <div style="display: flex;">
+            <section class="produtos2">
+                <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                <br>
+                <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                    Creme Para As Mãos Hands 100g</p>
+                    <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                    <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+        
+                <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                    <script>
+                        function abrirNovaJanela() {
+        
+                        var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                
+                        window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                        
+                    </script>
+                </section>
+                <section class="produtos2">
+                    <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <br>
+                    <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+            
+                    <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                        <script>
+                            function abrirNovaJanela() {
+            
+                            var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                    
+                            window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                            
+                        </script>
+                    </section>
+                    <section class="produtos2">
+                        <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                        <br>
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                            Creme Para As Mãos Hands 100g</p>
+                            <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                            <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                
+                        <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                            <script>
+                                function abrirNovaJanela() {
+                
+                                var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                        
+                                window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                                
+                            </script>
+                        </section>
+                </div>
+                <div style="display: flex;">
+                    <section class="produtos2">
+                        <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                        <br>
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                            Creme Para As Mãos Hands 100g</p>
+                            <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                            <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                
+                        <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                            <script>
+                                function abrirNovaJanela() {
+                
+                                var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                        
+                                window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                                
+                            </script>
+                        </section>
+                        <section class="produtos2">
+                            <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                            <br>
+                            <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                                Creme Para As Mãos Hands 100g</p>
+                                <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                                <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    
+                            <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                                <script>
+                                    function abrirNovaJanela() {
+                    
+                                    var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                            
+                                    window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                                    
+                                </script>
+                            </section>
+                            <section class="produtos2">
+                                <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                                <br>
+                                <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                                    Creme Para As Mãos Hands 100g</p>
+                                    <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                                    <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                        
+                                <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                                    <script>
+                                        function abrirNovaJanela() {
+                        
+                                        var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                                
+                                        window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                                        
+                                    </script>
+                                </section>
+                        </div>
+                    <section class="titulo">
+                    <h1>produtos masculinos !</h1>
+                    </section>
+                    <div style="display: flex;">
+                        <section class="produtos2">
+                            <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                            <br>
+                            <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                                Creme Para As Mãos Hands 100g</p>
+                                <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                                <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                    
+                            <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                                <script>
+                                    function abrirNovaJanela() {
+                    
+                                    var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                            
+                                    window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                                    
+                                </script>
+                            </section>
+                            <section class="produtos2">
+                                <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                                <br>
+                                <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                                    Creme Para As Mãos Hands 100g</p>
+                                    <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                                    <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                        
+                                <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                                    <script>
+                                        function abrirNovaJanela() {
+                        
+                                        var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                                
+                                        window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                                        
+                                    </script>
+                                </section>
+                                <section class="produtos2">
+                                    <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                                    <br>
+                                    <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                                        Creme Para As Mãos Hands 100g</p>
+                                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                            
+                                    <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                                        <script>
+                                            function abrirNovaJanela() {
+                            
+                                            var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                                    
+                                            window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                                            
+                                        </script>
+                                    </section>
+                            </div>
+                            <div style="display: flex;">
+                                <section class="produtos2">
+                                    <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                                    <br>
+                                    <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                                        Creme Para As Mãos Hands 100g</p>
+                                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                            
+                                    <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                                        <script>
+                                            function abrirNovaJanela() {
+                            
+                                            var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                                    
+                                            window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                                            
+                                        </script>
+                                    </section>
+                                    <section class="produtos2">
+                                        <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                                        <br>
+                                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                                            Creme Para As Mãos Hands 100g</p>
+                                            <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                                            <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                                
+                                        <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                                            <script>
+                                                function abrirNovaJanela() {
+                                
+                                                var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                                        
+                                                window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                                                
+                                            </script>
+                                        </section>
+                                        <section class="produtos2">
+                                            <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                                            <br>
+                                            <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                                                Creme Para As Mãos Hands 100g</p>
+                                                <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                                                <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                                    
+                                            <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                                                <script>
+                                                    function abrirNovaJanela() {
+                                    
+                                                    var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                                            
+                                                    window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                                                    
+                                                </script>
+                                            </section>
+                                    </div>
 
+                            
+                    
+        </body>
+    </head>
+   <section class="titulo">
+    <h1>produtos mais vendidos !</h1>
+  </section>
+   <div style="display: flex;">
+    <section class="produtos2">
+        <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+        <br>
+        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+            Creme Para As Mãos Hands 100g</p>
+            <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+            <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+
+        <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+            <script>
+                function abrirNovaJanela() {
+
+                var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+        
+                window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                
+            </script>
+        </section>
+        <section class="produtos2">
+            <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+            <br>
+            <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                Creme Para As Mãos Hands 100g</p>
+                <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+    
+            <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                <script>
+                    function abrirNovaJanela() {
+    
+                    var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+            
+                    window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                    
+                </script>
+            </section>
+            <section class="produtos2">
+                <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                <br>
+                <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                    Creme Para As Mãos Hands 100g</p>
+                    <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                    <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+        
+                <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                    <script>
+                        function abrirNovaJanela() {
+        
+                        var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                
+                        window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                        
+                    </script>
+                </section>
+        </div>
+        <div style="display: flex;">
+            <section class="produtos2">
+                <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                <br>
+                <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                    Creme Para As Mãos Hands 100g</p>
+                    <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                    <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+        
+                <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                    <script>
+                        function abrirNovaJanela() {
+        
+                        var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                
+                        window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                        
+                    </script>
+                </section>
+                <section class="produtos2">
+                    <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                    <br>
+                    <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                        Creme Para As Mãos Hands 100g</p>
+                        <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                        <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+            
+                    <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                        <script>
+                            function abrirNovaJanela() {
+            
+                            var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                    
+                            window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                            
+                        </script>
+                    </section>
+                    <section class="produtos2">
+                        <img src="https://dannycosmeticos.vtexassets.com/arquivos/ids/353520-800-800?v=638260065969800000&width=800&height=800&aspect=true">
+                        <br>
+                        <p style="margin-left: 7.5%;">Luva De Silicone Aloe Vera<br>
+                            Creme Para As Mãos Hands 100g</p>
+                            <h1 style="margin-left: 7.5%">★★★★★<br>R$ 29,90</h1>
+                            <p style="margin-left: 7.5%;color: gray;">Em até 1x R$ 29,90 sem juros</p>
+                
+                        <button class="button" style="vertical-align:middle" onclick='abrirNovaJanela()'><span>Comprar </span></button>
+                            <script>
+                                function abrirNovaJanela() {
+                
+                                var url = 'file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html';
+                        
+                                window.open('file:///C:/Users/Humberto%20Luna/Documents/projeto%20beleza/luan.html', '_blank');}
+                                
+                            </script>
+                        </section>
+                </div>
+
+    
 
 
 --------------------CREMES------------------------------------------------------------------------------
