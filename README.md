@@ -11,4 +11,4 @@ Shampoo Masculino Inoar Argan Oil System
 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThg3Ruq14lE4qUD0FimvSR0oglK-S8e4EVDKPO7ODlNHbgXu1NR1uL6tIYT9LVwk38Q4o&usqp=CA
 
  Shampoo Masculino Paul Mitchell Mitch Double Hitter
- 2wCEAAkGBxEREhMQDw8NDxEQEBAQDw8PDhAQEA4PFRIWFxYSFhUYHTQgGCYlGxMVITciJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFysdFx0tKy8vLS0uMTc3Nys3LS01Ny0rNystNy0rLTctNSs3NC43LS41LTctNTcrLS4tMi00L
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY0pPVsd5YZ4VPEcluJ4XdLlkf-ZWdBix3Zw&s
