@@ -8,7 +8,7 @@ Shampoo Kérastase Résistance Bain Thérapiste
 https://i.ebayimg.com/images/g/mjUAAOSwL1lhm~XB/s-l1200.webp
 
 Shampoo Aussie Miraculously Smooth
-https://m.media-amazon.com/images/I/61OzXFomlUL._AC_UF350,350_QL80_.jpg
+https://cdn.ultrafarma.com.br/static/produtos/813602/large-637999720676813296-813602_3.jpg
 
 Shampoo Lola Cosmetics Dream Cream
 https://lolacosmetics.jetassets.com.br/produto/20201121184836_7161992839_D.png
