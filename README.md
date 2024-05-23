@@ -11,4 +11,4 @@ Shampoo Aussie Miraculously Smooth
 https://cdn.ultrafarma.com.br/static/produtos/813602/large-637999720676813296-813602_3.jpg
 
 Shampoo Lola Cosmetics Dream Cream
-https://lolacosmetics.jetassets.com.br/produto/20201121184836_7161992839_D.png
+https://acdn.mitiendanube.com/stores/001/719/064/products/16422103178861-9ed83e7d78215b4ca616422130859349-640-0.jpg
